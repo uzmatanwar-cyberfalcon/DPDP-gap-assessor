@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "DPDP Gap Assessor",
+    "version": "0.1.0"
+  },
+  "rules": {
+    "R1":  { "cite": "s.5", "short": "Notice" },
+    "R2":  { "cite": "s.6", "short": "Consent for each purpose" },
+    "R3":  {
+      "cite": "s.7",
+      "short": "Legitimate uses",
+      "answers": [
+        { "value": "consent_only", "label": "We rely on consent for everything", "outcome": "na" },
+        { "value": "yes", "label": "Yes, each one is matched to a legitimate use and written down", "outcome": "ok" },
+        { "value": "no", "label": "We use data without consent and have not matched it to a legitimate use", "outcome": "gap" },
+        { "value": "unsure", "label": "Not sure", "outcome": "unsure" }
+      ]
+    },
+    "R4":  { "cite": "s.6", "short": "Withdrawing consent" },
+    "R5":  { "cite": "s.8(1)–(2)", "short": "Vendor contracts" },
+    "R6":  { "cite": "s.8(5)", "short": "Security safeguards" },
+    "R7":  { "cite": "s.8(6)", "short": "Breach response" },
+    "R8":  {
+      "cite": "s.8(7)",
+      "short": "Erasing data",
+      "hint": "Think about every place personal data sits: your database, email inboxes, spreadsheets and backups. Is there a set time after which it is deleted, and does anything actually do it?"
+    },
+    "R9":  { "cite": "s.8(9)–(10), s.13", "short": "Contact person and grievances" },
+    "R10": { "cite": "s.11–12", "short": "User requests: access, correction, erasure" },
+    "R11": {
+      "cite": "s.9",
+      "short": "Children’s data",
+      "hint": "If anyone can sign up without an age check, you may not be able to rule out users under 18. “Not sure” is a fair answer.",
+      "answers": [
+        { "value": "none", "label": "No, we do not process data of anyone under 18", "outcome": "na" },
+        { "value": "yes", "label": "Yes, and we get verifiable parental consent", "outcome": "ok" },
+        { "value": "no", "label": "Yes, but we do not get verifiable parental consent", "outcome": "gap" },
+        { "value": "unsure", "label": "Not sure", "outcome": "unsure" }
+      ]
+    },
+    "R12": {
+      "cite": "s.10",
+      "short": "Significant Data Fiduciary",
+      "answers": [
+        { "value": "not_notified", "label": "No, we have not been notified", "outcome": "na" },
+        { "value": "notified", "label": "Yes, we have been notified", "outcome": "applies" },
+        { "value": "unsure", "label": "Not sure", "outcome": "unsure" }
+      ],
+      "outcome_notes": {
+        "na": "$action",
+        "applies": "As a notified Significant Data Fiduciary you must appoint a Data Protection Officer based in India and an independent data auditor, and carry out impact assessments and periodic audits. Plan for these now."
+      }
+    },
+    "R13": {
+      "cite": "s.16",
+      "short": "Transfers outside India",
+      "answers": [
+        { "value": "india_only", "label": "No, our data stays in India", "outcome": "na" },
+        { "value": "abroad", "label": "Yes, some data is stored or processed abroad", "outcome": "applies" },
+        { "value": "unsure", "label": "Not sure", "outcome": "unsure" }
+      ]
+    }
+  }
+}
