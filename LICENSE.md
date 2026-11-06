@@ -6,7 +6,7 @@ You may share and adapt them, including commercially, if you give credit.
 
 Suggested credit:
 
-> DPDP Gap Assessor rules dataset by Uzma Zuber Tanwar, https://github.com/[uzmatanwar-cyberfalcon/dpdp-gap-assessor, licensed under CC BY 4.0.
+> DPDP Gap Assessor rules dataset by Uzma Zuber Tanwar, https://github.com/uzmatanwar-cyberfalcon/dpdp-gap-assessor, licensed under CC BY 4.0.
 
 Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
 
